@@ -1,0 +1,16 @@
+# DeBERTa-v3-large fine-tuning pipeline (RTX 4090 / CUDA target)
+# Tested with Python 3.10+
+#
+# IMPORTANT: install the CUDA build of torch *first*, e.g. for CUDA 12.1:
+#     pip install torch --index-url https://download.pytorch.org/whl/cu121
+# then run `pip install -r requirements.txt` for the rest.
+
+torch>=2.2.0
+transformers>=4.41.0
+datasets>=2.18.0
+accelerate>=0.28.0
+sentencepiece>=0.2.0
+protobuf>=4.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+tqdm>=4.65.0

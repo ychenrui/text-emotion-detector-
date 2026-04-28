@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Hugging Face / training artifacts — these are huge and shouldn't be in git.
+# Reproduce them by re-running the training scripts.
+checkpoints/
+runs/
+wandb/
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+
+# Logs
+*.log
+logs/
+
+# Datasets cache (HF caches into ~/.cache by default, but just in case)
+data_cache/
+.cache/
